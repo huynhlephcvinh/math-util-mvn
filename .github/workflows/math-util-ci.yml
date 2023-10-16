@@ -24,4 +24,12 @@ jobs:                                     # Thì làm những việc dưới đ�
     - name: Build with Maven (tạo .jar .war)     # 4. Mượn maven và chạy lệnh huyền thoại mvn package
       run: mvn -B package --file pom.xml
 
+    - name: Distribute jar-war file # Gửi file .jar .war đi đâu, CD nhảy vào ...
+      run: mkdir staging && cp target/*.jar staging # tạo thư mục staging chứa file .jar .war sau khi build      
+     
+    - name: Make hyperlink to jar-war file # Tạo hyperlink để download build 
+      uses: actions/upload-artifact@v1
+      with:
+        name: HAY-DOWNLOAD-JAR-O-DAY    # đây là đường link trỏ tới file .jar .war
+        path: staging                   # nếu được build thành công
 
