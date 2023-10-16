@@ -58,12 +58,26 @@ public class MathUtility {
            
     }
         
-        //KĨ THUẬT KIỂM THỬ GỌI LÀ: REGRESSION TESTING
-        //                           KIỂM THỬ HỒI QUY  - TEST LẠI NHỮNG THỨ ĐÃ TỪNG TEST
-        //Trong thực tế làm dự án, code của ta sẽ liên tục đc chỉnh sửa
-        //sửa vì:
-        // fix bug thì phải sửa vode, sửa hàm
-        // thêm hàm, thêm tính năng
-        // tối ưu hàm cũ gọn hơn dễ đọc hơn, chạy nhanh hơn
-        //Hàm đang ngon - màu xanh, nếu ta sửa hàm vì lí do nào đó
+    // kỹ thuật kiểm thử gọi là: regression testing
+    //                           kiểm thử hồi quy: test lai những thứ
+    //                           đã từng test
+    // trong thực tế làm dự án, code của ta sẽ liên tục dc chỉnh sửa
+    // vì:
+    // fix bug thì phải sửa code, sửa hàm
+    // thêm hàm, thêm tính năng
+    // tối ưu hàm cũ, làm hàm cũ gọn hơn, dễ đọc hơn, chạy nhanh hơn
+    // hàm đang ngon - màu xanh, nếu ta sửa hàm vì lí do gi đó
+    // liệu rằng hàm còn xanh hay ko, thì phải test lại
+    // nếu test = tay, bằng log, thì cực kì tốn thời gian, mất sức
+    // nếu code của ta có sẵn script - code kiểm thử
+    // ta chỉ việc run lại cái test script này
+    // nếu hàm sửa ngon, nó phải ra màu xanh
+    // nếu hàm sửa ko nogn, bị màu đỏ!!!
+    // nhờ test script ta verify lại 1 hàm rất nhanh -> kiểm thử lại
+    // thứ đã từng kiểm thử để đảm bảo nó còn ngon so với trước
+    // khi sửa được gọi là kiểm thử hồi quy - regression testing
+    // nhờ ci, hồi quy liên tục
+    
+    // bài này mình thử hồi quy = cách sửa lại hàm thoe thuật toán
+    // đệ quy - recusion
 }
