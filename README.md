@@ -3,7 +3,7 @@
 ### Welcome to Math Utility Repository
 
 
-#### YOu will find in this repo the following stuff:
+#### You will find in this repo the following stuff:
 
 * A Maven project to demonstrate the legendary Math library 
 * A Unit Test test script usinng JUnit Test framework
